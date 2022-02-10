@@ -13,6 +13,18 @@ module.exports = {
     'vue/attribute-hyphenation': ['error', 'never'],
     'comma-dangle': ['error', 'only-multiline'],
     'space-before-function-paren': ['error', 'never'],
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'always',
+          normal: 'never',
+          component: 'always',
+        },
+        svg: 'always',
+        component: 'always',
+      },
+    ],
   },
   overrides: [
     {

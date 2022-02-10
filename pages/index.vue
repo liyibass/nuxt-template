@@ -1,6 +1,4 @@
-<template>
-  <h1>YOYO</h1>
-</template>
+<template></template>
 
 <script lang="ts">
 import Vue from 'vue'

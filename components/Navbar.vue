@@ -1,9 +1,17 @@
 <template>
-  <div>i am navbar</div>
+  <div class="navbar"></div>
 </template>
 
 <script>
-export default {}
+import Logo from '~/components/Logo'
+export default {
+  components: {
+    Logo,
+  },
+}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.navbar {
+}
+</style>
