@@ -2,14 +2,24 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
   },
-  extends: [
-    '@nuxtjs/eslint-config-typescript',
-    'plugin:nuxt/recommended'
-  ],
-  plugins: [
-  ],
+
+  extends: ['@nuxtjs/eslint-config-typescript', 'plugin:nuxt/recommended'],
+  plugins: [],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'nuxt/no-cjs-in-config': 'off',
+    'vue/attribute-hyphenation': ['error', 'never'],
+    'comma-dangle': ['error', 'only-multiline'],
+    'space-before-function-paren': ['error', 'never'],
+  },
+  overrides: [
+    {
+      files: ['*.vue'],
+      rules: {
+        'vue/multi-word-component-names': 0,
+      },
+    },
+  ],
 }
