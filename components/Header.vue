@@ -1,16 +1,15 @@
 <template>
   <div class="header" v-on:click="clickHandler">
-    <Logo />
+    <logo />
   </div>
 </template>
 
-<script>
-import Logo from '~/components/Logo'
+<script lang="ts">
+import Vue from 'vue'
+import Logo from './Logo.vue'
 
-export default {
-  components: {
-    Logo,
-  },
+export default Vue.extend({
+  components: { Logo },
   data() {
     return {
       name: 'liyi',
@@ -26,7 +25,7 @@ export default {
       return this.$store.state.isNavbarOn
     },
   },
-}
+})
 </script>
 
 <style lang="scss" scoped>

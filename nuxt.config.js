@@ -32,10 +32,10 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxtjs/style-resources'],
   css: [
+    '~/assets/scss/variable.scss',
     '~/assets/scss/base.css',
     '~/assets/scss/global.style.scss',
     '~/assets/scss/responsiveMixin.scss',
-    '~/assets/scss/variable.scss',
   ],
   styleResources: {
     scss: ['~/assets/scss/*.scss'],

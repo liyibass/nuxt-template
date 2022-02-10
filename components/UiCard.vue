@@ -1,5 +1,7 @@
 <template>
-  <div class="navbar"></div>
+  <div class="card">
+    <slot />
+  </div>
 </template>
 
 <script lang="ts">
@@ -9,6 +11,9 @@ export default Vue.extend({})
 </script>
 
 <style lang="scss" scoped>
-.navbar {
+.card {
+  background: $background;
+  padding: 10px;
+  border-radius: 10px;
 }
 </style>
